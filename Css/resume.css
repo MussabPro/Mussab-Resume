@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: grey;
+  --secondary: orange;
+  --icons-size: 3.5rem;
+  --transition: all ease-in-out 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.navbar {
+  height: 100%;
+  width: 16vw;
+  background-color: var(--secondary);
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.navbar-nav {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.img-profile {
+  border: 0.75rem solid rgba(255, 255, 255, 0.33);
+  height: auto;
+  width: 12vw;
+  box-shadow: 0px 0px 20px rgb(143, 93, 0);
+}
+@media (max-width: 1350px) {
+  .img-profile {
+    border: 0.5rem solid rgba(255, 255, 255, 0.33);
+  }
+}
+.nav-item > a {
+  color: rgba(112, 112, 112, 0.5);
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.nav-item {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-item > a:active {
+  color: white;
+}
+
+.nav-item > a.active {
+  color: white;
+}
+
+.nav-item > a:hover {
+  color: rgba(255, 255, 255, 0.718);
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+hr {
+  background-color: var(--primary);
+  width: 100%;
+  margin: 0px;
+}
+
+#name {
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 6rem;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 5rem;
+  color: black;
+}
+
+div.resume-content > h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.subheading-edu {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.Sections {
+  height: 100vh;
+  position: relative;
+  width: 82vw;
+  top: 0%;
+  left: 16vw;
+  right: 0%;
+}
+
+.Sections > section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0rem 1rem 0rem 1rem;
+  padding: 2rem;
+}
+
+#email {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+#email:hover {
+  text-decoration: underline;
+}
+
+.subheading {
+  font-size: 2.5rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.social > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--primary);
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.social > a:last-child {
+  margin: 0rem;
+}
+
+.social > a:hover {
+  background-color: var(--secondary);
+}
+
+.social > a > svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.dev-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dev-icons > li {
+  font-size: var(--icons-size);
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: var(--transition);
+  margin-right: 1rem !important;
+}
+
+.dev-icons > li > svg {
+  height: var(--icons-size);
+  width: var(--icons-size);
+  transition: var(--transition);
+  fill: var(--primary);
+}
+
+.dev-icons > li > svg > path {
+  transition: var(--transition);
+}
+
+.dev-icons > li > svg:first-child:hover {
+  fill: rgb(68, 168, 179);
+}
+
+.dev-icons > li:hover svg .fill-1 {
+  fill: rgb(26, 188, 254);
+}
+
+.dev-icons > li:hover svg .fill-2 {
+  fill: rgb(10, 207, 131);
+}
+
+.dev-icons > li:hover svg .fill-3 {
+  fill: rgb(255, 114, 98);
+}
+
+.dev-icons > li:hover svg .fill-4 {
+  fill: rgb(242, 78, 30);
+}
+
+.dev-icons > li:hover svg .fill-5 {
+  fill: rgb(162, 89, 255);
+}
+
+.dev-icons > li:first-child:hover {
+  color: rgb(97, 219, 251);
+}
+
+.dev-icons > li:nth-child(2):hover {
+  color: rgb(227, 76, 38);
+}
+
+.dev-icons > li:nth-child(3):hover {
+  color: rgb(4, 111, 190);
+}
+
+.dev-icons > li:nth-child(4):hover {
+  color: rgb(240, 219, 79);
+}
+
+.dev-icons > li:nth-child(5):hover {
+  color: rgb(142, 19, 253);
+}
+
+.dev-icons > li:last-child:hover {
+  margin-right: 0rem;
+}
+
+.workflow-list {
+  font-size: 1.35rem;
+}
+
+.Selection-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Selection-heading > span {
+  font-size: var(--icons-size);
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+  .img-profile > a > img {
+    display: none;
+  }
+
+  .img-profile > a > h2 {
+    display: block;
+    margin: 0em 1em;
+    color: white;
+    font-weight: bold;
+  }
+
+  .img-profile > a {
+    text-decoration: none;
+  }
+
+  .navbar {
+    width: 100vw;
+    height: 12vh;
+    padding: 2em 2em !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  .navbar-brand span:first-child {
+    font-size: 1.5em !important;
+    font-weight: 500;
+  }
+  .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    background-color: var(--secondary) !important;
+  }
+  .navbar-toggler:focus {
+    border: none !important;
+    outline: none !important;
+  }
+  .navbar-collapse {
+    background-color: var(--secondary);
+    border-radius: 0em 0em 0.5em 0.5em;
+    padding: 2em 2em !important;
+    /* margin: 2em 2em !important ; */
+  }
+  .navbar-toggler-icon {
+    color: white;
+    background-color: var(--secondary); /* Set your primary color */
+  }
+
+  .navbar-toggler-icon:after,
+  .navbar-toggler-icon:before {
+    background-color: var(--secondary); /* Set your primary color */
+  }
+
+  .nav-links {
+    position: relative;
+    top: 15vh;
+    width: 100vw;
+    background-color: var(--secondary);
+  }
+
+  .nav-link {
+    text-align: left !important;
+  }
+
+  .Sections {
+    position: absolute;
+    top: 12vh;
+    left: 0rem;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+  }
+
+  .Sections > section {
+    min-height: 100vh;
+    max-height: fit-content;
+  }
+}
