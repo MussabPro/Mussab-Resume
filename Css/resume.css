@@ -286,7 +286,7 @@ div.resume-content > h2 {
   .navbar {
     width: 100vw;
     height: 12vh;
-    padding: 2em 2em !important;
+    padding: 0em 2em !important;
     flex-direction: row !important;
     justify-content: space-between !important;
   }
@@ -307,7 +307,7 @@ div.resume-content > h2 {
   .navbar-collapse {
     background-color: var(--secondary);
     border-radius: 0em 0em 0.5em 0.5em;
-    padding: 0em 2em !important;
+    padding: 2em 2em !important;
     /* margin: 2em 2em !important ; */
   }
   .navbar-toggler-icon {
